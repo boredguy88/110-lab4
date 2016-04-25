@@ -36,8 +36,7 @@ core
 <target name="build" depends="compile">
 <mkdir dir="${test.build.dir}"/>
 <javac srcdir="${test.src.dir}" destdir="${test.build.dir}" includeantruntime="false">
-<!
---
+<!--
 Make sure these two libraries are included 
 --
 >
@@ -53,13 +52,11 @@ core
 </javac>
 <echo message="Build done" />
 </target>
-<!
---
+<!--
 Test and build all files  
 --
 >
-<!
---
+<!--
 To run this: use "ant" (default) or "ant run" 
 --
 >
@@ -75,13 +72,11 @@ To run this: use "ant" (default) or "ant run"
 </batchtest>
 </junit>
 </target>
-<!
---
+<!--
 delete all class files 
 --
 >
-<!
---
+<!--
 To run this: use "ant clean" 
 --
 >
